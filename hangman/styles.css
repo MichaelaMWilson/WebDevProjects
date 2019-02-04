@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css?family=Luckiest+Guy");
+
+body{
+    background-color: #BDD3FB;
+}
+
+img{
+    width: 240px;
+    display: inline-block;
+    margin: 0 20px 0 20px;
+    border: 2px solid cornflowerblue;
+    border-radius: 5px;
+}
+
+button, button:enabled {
+    width: 35px;
+    height: 35px;
+    font-size: 14pt;
+    font-family: Calibri, sans-serif;
+    background-color: white;
+    border-color: cornflowerblue;
+    color: cornflowerblue;
+    border-radius: 5px;
+    margin: 0 auto 5px auto;
+}
+button:hover, button:enabled:hover{
+    background: cornflowerblue;
+    color: white;
+}
+
+button.categoryBtn{
+    width: auto;
+    height: 35px;
+    display: block;
+    margin: 5px auto;
+}
+
+p{
+    font-size: 40pt;
+    font-family: Calibri, sans-serif;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    display: none;
+}
+
+h2{
+    font-size: 32pt;
+    font-family: Calibri, sans-serif;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+h3{
+    font-size: 20pt;
+    font-family: Calibri, sans-serif;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    margin: 0 auto;
+}
+.content{
+    display: flex;
+    width: 530px;
+    margin: 0 auto;
+}
+.btnContent{
+    display: block;
+}
+
+button:disabled{
+    background: cornflowerblue;
+}
+
+button:disabled:hover{
+    background: cornflowerblue;
+    color: cornflowerblue;
+}
+
+
+
+
+
+/* I got this bouncing text animation CSS from the following website: http://wdrfree.com/200/pure-css-text-animation-effects
+   It is by Arlina Design" */
+
+h1 {
+    cursor: default;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    display: none;
+    text-align: center;
+}
+
+h1 span {
+    position: relative;
+    top: 20px;
+    display: inline-block;
+    -webkit-animation: bounce 0.3s ease infinite alternate;
+    font-size: 80px;
+    color: #fff;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
+    0 5px 0 #ccc, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent,
+    0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+h1 span:nth-child(2) {
+    -webkit-animation-delay: 0.1s;
+}
+
+h1 span:nth-child(3) {
+    -webkit-animation-delay: 0.2s;
+}
+
+h1 span:nth-child(4) {
+    -webkit-animation-delay: 0.3s;
+}
+
+h1 span:nth-child(5) {
+    -webkit-animation-delay: 0.4s;
+}
+
+h1 span:nth-child(6) {
+    -webkit-animation-delay: 0.5s;
+}
+
+h1 span:nth-child(7) {
+    -webkit-animation-delay: 0.6s;
+}
+
+h1 span:nth-child(8) {
+    -webkit-animation-delay: 0.2s;
+}
+
+h1 span:nth-child(9) {
+    -webkit-animation-delay: 0.3s;
+}
+
+h1 span:nth-child(10) {
+    -webkit-animation-delay: 0.4s;
+}
+
+h1 span:nth-child(11) {
+    -webkit-animation-delay: 0.5s;
+}
+
+h1 span:nth-child(12) {
+    -webkit-animation-delay: 0.6s;
+}
+
+h1 span:nth-child(13) {
+    -webkit-animation-delay: 0.7s;
+}
+
+h1 span:nth-child(14) {
+    -webkit-animation-delay: 0.8s;
+}
+
+/* ANIMATION */
+@-webkit-keyframes bounce {
+    100% {
+        top: -20px;
+        text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
+        0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc, 0 9px 0 #ccc,
+        0 50px 25px rgba(0, 0, 0, 0.2);
+    }
+}

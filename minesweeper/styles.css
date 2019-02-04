@@ -1,0 +1,35 @@
+body{
+    background: linear-gradient(to bottom right, mistyrose, pink) fixed;
+}
+h1{
+    padding: 15px;
+}
+
+img{
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+}
+img:hover{
+    opacity: .5;
+}
+.grid {
+    margin: 0 auto;
+    width: 100%;
+}
+.horizontal{
+    float: left;
+    margin: 0;
+    padding: 0;
+    display: grid;
+
+}
+.vertical{
+    display:block;
+    margin: 0;
+    padding: 0;
+}
+
+
+

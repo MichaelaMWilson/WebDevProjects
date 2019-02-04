@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="styles.css">
+    <style type="text/css">
+    </style>
+</head>
+<body>
+
+
+<div class="content">
+    <div class="btnContent">
+        <h3>Categories</h3>
+    <button id="animals" class="categoryBtn" onclick="category('animals')">animals</button>
+    <button id="food" class="categoryBtn" onclick="category('food')">food</button>
+    <button id="random" class="categoryBtn" onclick="category('random')">random words</button>
+    </div>
+
+    <img id="hangmanImg" src="images/0.jpg" alt="Hangman Image">
+
+    <div class="btnContent">
+        <button id="reveal" class="categoryBtn" onclick="reveal()">Reveal Word</button>
+        <button id="playAgain" class="categoryBtn" onclick="category('clear')">Play Again?</button>
+    </div>
+
+</div>
+
+
+<div style="line-height: 20px; padding:0;">
+    <h2 id="guessTxt">Choose a category to start</h2>
+</div>
+
+<h1 id="win">
+    <span>Y</span>
+    <span>O</span>
+    <span>U</span>
+    <br>
+    <span>W</span>
+    <span>I</span>
+    <span>N</span>
+    <span>!!</span>
+</h1>
+
+<h1 id="lose">
+    <span>Y</span>
+    <span>O</span>
+    <span>U</span>
+    <br>
+    <span>L</span>
+    <span>O</span>
+    <span>S</span>
+    <span>E</span>
+    <span>!!</span>
+</h1>
+
+
+<div style="text-align: center;">
+<button id = "aBtn" onclick="guess('a')">a</button>
+<button id = "bBtn" onclick="guess('b')">b</button>
+<button id = "cBtn" onclick="guess('c')">c</button>
+<button id = "dBtn" onclick="guess('d')">d</button>
+<button id = "eBtn" onclick="guess('e')">e</button>
+<button id = "fBtn" onclick="guess('f')">f</button>
+<button id = "gBtn" onclick="guess('g')">g</button>
+<button id = "hBtn" onclick="guess('h')">h</button>
+<button id = "iBtn" onclick="guess('i')">i</button>
+<button id = "jBtn" onclick="guess('j')">j</button>
+<button id = "kBtn" onclick="guess('k')">k</button>
+<button id = "lBtn" onclick="guess('l')">l</button>
+<button id = "mBtn" onclick="guess('m')">m</button>
+<button id = "nBtn" onclick="guess('n')">n</button>
+<button id = "oBtn" onclick="guess('o')">o</button>
+<button id = "pBtn" onclick="guess('p')">p</button>
+<button id = "qBtn" onclick="guess('q')">q</button>
+<button id = "rBtn" onclick="guess('r')">r</button>
+<button id = "sBtn" onclick="guess('s')">s</button>
+<button id = "tBtn" onclick="guess('t')">t</button>
+<button id = "uBtn" onclick="guess('u')">u</button>
+<button id = "vBtn" onclick="guess('v')">v</button>
+<button id = "wBtn" onclick="guess('w')">w</button>
+<button id = "xBtn" onclick="guess('x')">x</button>
+<button id = "yBtn" onclick="guess('y')">y</button>
+<button id = "zBtn" onclick="guess('z')">z</button>
+</div>
+
+<script src="jquery-3.3.1.js" type="text/javascript"></script>
+<script src = "main.js" type="text/javascript"></script>
+</body>
+</html>
