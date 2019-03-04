@@ -1,0 +1,7 @@
+body{
+    background-color: ghostwhite;
+}
+
+a:hover{
+    opacity: .5;
+}

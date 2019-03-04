@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>US Weather</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <style type="text/css">
+    </style>
+</head>
+<body>
+
+
+<div class="grid-container" style="color:white;">
+    <div class="grid-item" style="grid-column: 1 / span 7; padding: 15px 0 0 0;">
+
+        <h1 id="locationHeader">Harrisburg, PA</h1>
+        <div class="form-group" style="display:inline; float:right; padding: 15px;">
+                <input class = "form-control" id = "zipField" type = "text" placeHolder = "City, State or Zip Code">
+                <button onclick="storeZipCode()" class="btn" style="float:right; margin:5px 0; background-color:whitesmoke">Submit</button>
+        </div>
+    </div>
+
+    <div class="grid-item" style="grid-column: 1 / 4;">
+        <h2 id="headingName">Today</h2>
+        <br>
+        <img id="headingImg" src="" alt="Weather icon" style="float: left; margin: 0 15px 15px 0;">
+        <h1 id="headingTemp" >Temperature</h1>
+        <button id="leftDegree" class="btn" style="color:white; margin:0 auto">°F</button>
+        <span style="display: inline">|</span>
+        <button id="rightDegree" class="btn unselected" style="color:white; margin:0 auto" onclick="swapDegrees()">C</button>
+
+        <br>
+        <span id="headingDesc">Description</span>
+        <br>
+        <br>
+    </div>
+    <div class="grid-item" style="grid-column: 4 / 8;">
+        <br>
+        <br>
+        <span id="headingPrec">Precipitation</span>
+        <span id="headingWind">Wind</span>
+        <span id="headingHumidity">Humidity</span>
+    </div>
+
+
+    <button class="grid-item2-clicked" id="day1" onclick="dayChange(1)">
+        <span id="day1Name">Today</span>
+        <br>
+        <img id="day1Img" src="" alt="Weather Icon">
+        <span id="day1High">High Temp</span>
+        <span id="day1Low">Low Temp</span>
+    </button>
+    <button class="grid-item2" id="day2" onclick="dayChange(2)">
+        <span id="day2Name">Tomorrow</span>
+        <br>
+        <img id="day2Img" src="" alt="Weather Icon">
+        <span id="day2High">High Temp</span>
+        <span id="day2Low">Low Temp</span>
+    </button>
+    <button class="grid-item2" id="day3" onclick="dayChange(3)">
+        <span id="day3Name">Day 3</span>
+        <br>
+        <img id="day3Img" src="" alt="Weather Icon">
+        <span id="day3High">High Temp</span>
+        <span id="day3Low">Low Temp</span>
+    </button>
+    <button class="grid-item2" id="day4" onclick="dayChange(4)">
+        <span id="day4Name">Day 4</span>
+        <br>
+        <img id="day4Img" src="" alt="Weather Icon">
+        <span id="day4High">High Temp</span>
+        <span id="day4Low">Low Temp</span>
+    </button>
+    <button class="grid-item2" id="day5" onclick="dayChange(5)">
+        <span id="day5Name">Day 5</span>
+        <br>
+        <img id="day5Img" src="" alt="Weather Icon">
+        <span id="day5High">High Temp</span>
+        <span id="day5Low">Low Temp</span>
+    </button>
+    <button class="grid-item2" id="day6" onclick="dayChange(6)">
+        <span id="day6Name">Day 6</span>
+        <br>
+        <img id="day6Img" src="" alt="Weather Icon">
+        <span id="day6High">High Temp</span>
+        <span id="day6Low">Low Temp</span>
+    </button>
+    <button class="grid-item2" id="day7" onclick="dayChange(7)">
+        <span id="day7Name">Day 7</span>
+        <br>
+        <img id="day7Img" src="" alt="Weather Icon">
+        <span id="day7High">High Temp</span>
+        <span id="day7Low">Low Temp</span>
+    </button>
+</div>
+
+<div style = "float:right">Icons made by <a href="https://www.flaticon.com/packs/weather-161" title="iconixar">iconixar</a> from
+    <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by
+    <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+</div>
+
+<script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+<script src="async.js"></script>
+
+</body>
+</html>
