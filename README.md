@@ -1,5 +1,7 @@
 # WebDevProjects
 Projects for CMPSC421, Net-centric Computing
+#### Note
+Some of these projects may need an API key to run correctly. Also any apps using Node.js were uploaded without node_modules, so they will need npm install run.
 
 
 ## Requirements:
