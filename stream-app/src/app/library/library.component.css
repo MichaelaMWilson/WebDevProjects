@@ -1,0 +1,33 @@
+#page{
+  padding-top: 30px;
+  width: 100%;
+  font-family: "Arial", "Helvetica", sans-serif;
+}
+#music{
+  border-collapse: collapse;
+  width: 80%;
+  margin: auto;
+}
+
+#music tr{
+
+  box-shadow: 2px 2px 5px #EFEFEF;
+}
+
+#music td, #music th{
+  padding: 5px;
+  width: 30%;
+  height: 25px;
+  vertical-align: bottom;
+  text-align: left;
+  border-bottom: 2px #312F2F;
+}
+tr:hover{
+  background-color: lightgray;
+  cursor: pointer;
+}
+#music th, th:hover{
+  background-color: #312F2F;
+  color: #EFEFEF;
+  cursor: default;
+}

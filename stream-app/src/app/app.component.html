@@ -1,0 +1,23 @@
+
+
+<div id="header">
+  <a [routerLink]="['/']" routerLinkActive="active"><i class="fas fa-home"></i></a>
+  <a [routerLink]="['/library']" routerLinkActive="active"><i class="fas fa-compact-disc"></i></a>
+</div>
+
+<div id="router"><router-outlet></router-outlet></div>
+
+<div id="footer">
+  <div id="left">Now Playing -- {{ song }}</div>
+  <div>
+    <button class="track" (click)="previousSong(song)"><i class="fas fa-step-backward icon"></i></button>
+    <button class="play" (click)="prepareSong(song)">
+    <i *ngIf="nowPlaying === 0" class="fas fa-play icon" style="padding-left: 5px;"></i>
+    <i *ngIf="nowPlaying === 1" class="fas fa-pause icon"></i>
+    </button>
+    <button class="track" (click)="nextSong(song)"><i class="fas fa-step-forward icon"></i></button>
+  </div>
+  <div></div>
+</div>
+
+
