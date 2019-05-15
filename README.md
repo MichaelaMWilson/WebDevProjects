@@ -40,3 +40,13 @@ Implement a playable version of 2048 using Vue.js and Google Cloud Firestore. Al
 
 ### stream-app 
 Create a music player using Angular. Create a component for a home page and the music library. Allow users to click on a song to play, and click again to stop. Create a header for navigation and a fixed footer for music to play no matter which component is currently active. Use Howler.js for the audio.
+
+## Problem Set 5
+
+### dnd-games
+Implement famous computer science problems as games in a React application. Choose from the following: Towers of Hanoi, Sliding Picture Game, or the Farmer riddle Must use drag and drop in every game. Use react navigation between games.
+
+## Problem Set 6
+
+### TODOApp
+Build an Android app using React Native. Minimum requirements are at least three pages with react navigation (or react navigation by Wix).
